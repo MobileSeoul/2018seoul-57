@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_open"
+        android:icon="@drawable/alarm"
+        android:title="Open/Close" />
+
+    <item
+        android:id="@+id/navigation_order_seller"
+        android:icon="@drawable/order"
+        android:title="Order" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/menu"
+        android:title="Menu" />
+
+    <item
+        android:id="@+id/navigation_review"
+        android:icon="@drawable/review"
+        android:title="Review" />
+
+</menu>

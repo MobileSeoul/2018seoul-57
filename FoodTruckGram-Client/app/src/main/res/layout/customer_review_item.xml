@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/review_background"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:background="#ffb732" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_img"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/user_img"
+            android:text="USER ID" />
+
+        <TextView
+            android:id="@+id/review_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_below="@+id/user_id"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/review_date"
+            android:text="후기 내용 쓰기!!!! 맛있었다 맛 없다 별로다 또 먹고싶다 등드으드으드등으으으으응" />
+
+        <TextView
+            android:id="@+id/review_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_img"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="2018/9/18"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

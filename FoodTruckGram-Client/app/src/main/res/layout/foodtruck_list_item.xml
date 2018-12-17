@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/foodtruck_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/foodtruckgram" />
+
+            <TextView
+                android:id="@+id/foodtruck_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_alignTop="@+id/foodtruck_profile"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/foodtruck_profile"
+                android:text="푸드트럭 이름"
+                android:textColor="#4a4a4a"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/foodtruck_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/foodtruck_name"
+                android:layout_below="@+id/foodtruck_name"
+                android:layout_marginTop="2dp"
+                android:text="#푸드트럭 ID" />
+
+
+         <!--   <ImageButton
+                android:id="@+id/detail_page_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/foodtruck_id"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#00ff0000"
+                android:src="@drawable/detail_btn" />-->
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/foodtruck_img"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/sample" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <ImageButton
+                    android:id="@+id/detail_page_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_detail"
+                    android:backgroundTint="#00ff0000" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:text="상세 보기"
+
+                    />
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="right"
+               android:layout_marginRight="10dp">
+
+               <ImageView
+                   android:id="@+id/favorite_btn"
+                   android:layout_margin="10dp"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:background="@drawable/ic_like_black" />
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/foodtruck_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="코멘트" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
